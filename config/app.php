@@ -180,6 +180,7 @@ return [
         Backpack\CRUD\CrudServiceProvider::class,
         Backpack\MenuCRUD\MenuCRUDServiceProvider::class,
         Backpack\NewsCRUD\NewsCRUDServiceProvider::class,
+        Backpack\PermissionManager\PermissionManagerServiceProvider::class,
 
     ],
 

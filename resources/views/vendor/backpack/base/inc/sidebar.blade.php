@@ -23,7 +23,19 @@
           <li class="treeview">
             <a href="#"><i class="fa fa-newspaper-o"></i> <span>Cafe</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
-              <li><a href="{{ url('admin/cafelist') }}"><i class="fa fa-newspaper-o"></i> <span>cafe list</span></a></li>
+              <li><a href="{{ url('admin/cafelist') }}"><i class="fa fa-coffee"></i> <span>Cafe list</span></a></li>
+              <li><a href="{{ url('admin/category') }}"><i class="fa fa-list"></i> <span>Category list</span></a></li>
+              <li><a href="{{ url('admin/dishes') }}"><i class="fa fa-cutlery"></i> <span>Dishes list</span></a></li>
+              <li><a href="{{ url('admin/reviews') }}"><i class="fa fa-star"></i> <span>Reviews list</span></a></li>
+            </ul>
+          </li>
+
+          <li class="treeview">
+            <a href="#"><i class="fa fa-group"></i> <span>Users, Roles, Permissions</span> <i class="fa fa-angle-left pull-right"></i></a>
+            <ul class="treeview-menu">
+              <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/user') }}"><i class="fa fa-user"></i> <span>Users</span></a></li>
+              <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/role') }}"><i class="fa fa-group"></i> <span>Roles</span></a></li>
+              <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/permission') }}"><i class="fa fa-key"></i> <span>Permissions</span></a></li>
             </ul>
           </li>
 
